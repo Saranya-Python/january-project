@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content%}
+<!-- <p id="p1" class="pprofile">profilepage</p> -->
+<h2>This is profile page</h2>
+<p>{{a.user}}</p>
+<p>{{a.bio}}</p>
+<img src="/user/{{a.pro_pic}}" alt="">
+{%endblock%}

@@ -1,0 +1,6 @@
+<!-- <p>product deleted</p> -->
+<form method="post">
+    {%csrf_token%}
+    <p>Are you sure you want to delete{{pro.name}}</p>
+    <input type="submit" value="delete">
+</form>

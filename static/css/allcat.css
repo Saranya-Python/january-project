@@ -1,0 +1,22 @@
+.cat{
+    height: 300px;
+    width: 50%;
+}
+.cat-div{
+    display: flex;
+    gap: 30px;
+}
+img{
+    width: 50%;
+    height: 300px;
+    border-radius: 20px;
+}
+p{
+    font-size: large;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}

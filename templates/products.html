@@ -1,0 +1,24 @@
+{% load static%}
+<link rel="stylesheet" href="{% static 'css/products.css'%}">
+
+
+<!-- {{pro}} -->
+
+<table>
+    <tr class="first">
+        <td>Product name</td>
+        <td>View</td>
+        <td>Edit</td>
+        <td>Delete</td>
+    </tr>
+
+    {% for i in pro %}
+    <tr>
+        <td>{{i.name}}</td>
+        <td><a href="{% url 'productdetails' i.id %}">View</a></td>
+        <td><a href="{% url 'editproduct' i.id %}">Edit</a></td>
+        <td><a href="{% url 'delpro' i.id %}">Delete</a></td>
+    </tr>
+
+    {% endfor %}
+</table>

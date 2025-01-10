@@ -1,0 +1,18 @@
+<!-- <form method="get" action="{% url 'success' %}">
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="address" name="address">
+    <input type="submit" value="ADD">
+</form> -->
+
+
+<!-- form il rand method ind get,post 
+ get-data retrival
+ post-data add  -->
+
+
+ <form method="post" action="{% url 'success' %}">
+    {% csrf_token %}
+    <input type="text" placeholder="name" name="name">
+    <input type="text" placeholder="address" name="address">
+    <input type="submit" value="ADD">
+</form>

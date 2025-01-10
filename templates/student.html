@@ -1,0 +1,20 @@
+<!-- {{form}} -->
+
+<!-- <form action="">
+    {{form}}
+    <input type="submit">
+</form> -->
+
+
+
+<!-- by default method get aayirikkum 
+ aa form il data add cheydh submit click cheyyumbol aanu aa form il action koduthittundegil aa action ilk povunnadhum method post aavunnadhum -->
+
+
+
+
+ <form method="post">
+    {% csrf_token%}
+    {{form}}
+    <input type="submit">
+</form> 

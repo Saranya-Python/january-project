@@ -1,0 +1,26 @@
+{%load static%}
+<link rel="stylesheet" href="{% static 'css/allcat.css' %}">
+
+
+<h1>All categories</h1>
+
+
+
+<div class="cat-div">
+
+
+{% for i in category%}
+</div class="cat">
+
+    <a href="{% url 'productlist' i.id %}">
+        <img src="{{i.cimg}}" alt="">
+    </a>
+
+    <p>{{i}}</p>
+
+</div>
+
+
+{% endfor%}
+
+</div>

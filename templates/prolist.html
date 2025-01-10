@@ -1,0 +1,16 @@
+{%load static%}
+<link rel="stylesheet" href="{% static 'css/prolist.css' %}">
+
+<h1>Products</h1>
+
+{% for i in p %}
+<a href="{% url 'productdetails' i.id%}">
+    <div class="prodiv">
+        <img src="/three/{{i.pimg}}" alt="">
+    <p>{{i.name}}</p>
+
+    </div>
+</a>
+
+
+{% endfor %}

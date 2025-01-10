@@ -1,0 +1,12 @@
+img{
+    height: 200px;
+    width: 200px;
+    border-radius: 30px;
+}
+p{
+    font-size: large;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    display: flex;
+}

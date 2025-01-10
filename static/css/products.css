@@ -1,0 +1,12 @@
+table,tr,td{
+    border: 1px solid black;
+    padding: 10px;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+}
+.first{
+    font-size: 30px;
+    color: rgb(104, 43, 226);
+}
